@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:text="보낸 사람" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="190dp"
+            android:layout_height="76dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="제목" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="시간" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="190dp"
+            android:layout_height="76dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="내용" />
+        <ImageView
+            android:id="@+id/imageRead"
+            android:src="@drawable/arrow_right"
+            android:layout_marginLeft="20dp"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:text="읽기" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#FF9C9B9B"
+        android:layout_marginLeft="20dp"
+        />
+</LinearLayout>

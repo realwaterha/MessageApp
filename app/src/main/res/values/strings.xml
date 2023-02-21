@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MessageApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="frag_btn_1">쪽지함</string>
+    <string name="frag_btn_2">쪽지보내기</string>
+    <string name="tv_login">로그인하기</string>
+    <string name="et_id">아이디를 입력해주세요.</string>
+    <string name="et_pw">비밀번호를 입력해주세요.</string>
+    <string name="btn_login">로그인</string>
 </resources>
