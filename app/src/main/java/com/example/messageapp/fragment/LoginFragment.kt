@@ -1,11 +1,13 @@
 package com.example.messageapp.fragment
 
+import android.media.Image
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.messageapp.MainActivity
@@ -21,13 +23,8 @@ class LoginFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-    lateinit var bindingMainBinding: ActivityMainBinding
     lateinit var binding: FragmentLoginBinding
     lateinit var navController: NavController
-
-
-    lateinit var btn1: Button
-    lateinit var btn2: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,7 +45,13 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
+
+        var mainActivity = context as MainActivity
+
         binding.btnLogin.setOnClickListener {
+//            messageHome.setImageResource(R.drawable.comment_bold_24)
+            var messageHome: ImageView = mainActivity.findViewById(R.id.messageHome)
+            messageHome.setImageResource(R.drawable.comment_bold_24)
             navController.navigate(R.id.action_loginFragment_to_mainFragment)
         }
     }
